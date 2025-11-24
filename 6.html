@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Image #6</title>
+<link rel="icon" href="https://img.icons8.com/fluency/48/image--v1.png" type="image/x-icon">
+</head>
+
+<style>
+    .yt-gallery-wrapper {
+        width: 100%; max-width: 900px; margin: 0 auto; padding: 20px 0;
+        font-family: sans-serif;
+    }
+
+    /* --- Preview Section --- */
+    .yt-preview-container {
+        width: 95%; margin: 0 auto 20px auto;
+        border-radius: 12px; overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        background: #000;
+        scroll-margin-top: 20px; /* ระยะห่างเมื่อ scroll มาถึง */
+    }
+    .yt-preview-link { display: block; width: 100%; height: auto; text-decoration: none; }
+    .yt-preview-img {
+        width: 100%; height: auto; display: block;
+        transition: opacity 0.2s;
+    }
+
+    /* --- Carousel Section --- */
+    .yt-carousel-wrapper {
+        position: relative; /* เพื่อวางลูกศร */
+        width: 100%;
+        padding: 0 50px; /* เว้นที่ให้ลูกศร */
+    }
+
+    .yt-track {
+        display: flex; gap: 10px; overflow-x: auto; padding: 10px 0;
+        scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
+        cursor: grab; scrollbar-width: none; -ms-overflow-style: none;
+    }
+    .yt-track::-webkit-scrollbar { display: none; }
+    .yt-track.active { cursor: grabbing; scroll-behavior: auto; }
+
+    .yt-thumb-item {
+        flex: 0 0 25%; /* Mobile Width */
+        max-width: 180px;
+        border-radius: 6px; overflow: hidden;
+        border: 3px solid transparent;
+        transition: all 0.2s;
+        opacity: 0.7;
+        cursor: pointer;
+        user-select: none;
+    }
+    .yt-thumb-item img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+    
+    .yt-thumb-item.active { border-color: #e74c3c; opacity: 1; transform: scale(1.05); }
+    .yt-thumb-item:hover { opacity: 1; }
+
+    /* --- Carousel Arrows (Attach Picture Style) --- */
+    .yt-car-btn {
+        position: absolute;
+        top: 50%; transform: translateY(-50%);
+        width: 40px; height: 60px; /* ทรงสี่เหลี่ยมผืนผ้า */
+        background-color: rgba(0, 0, 0, 0.3); /* สีพื้นหลังจางๆ */
+        border: none; cursor: pointer; z-index: 10;
+        display: flex; align-items: center; justify-content: center;
+        transition: background-color 0.3s;
+    }
+    .yt-car-btn:hover { background-color: rgba(0, 0, 0, 0.6); }
+    .yt-car-btn svg { width: 24px; height: 24px; fill: #fff; filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5)); }
+    
+    .yt-car-prev { left: 0; border-radius: 0 6px 6px 0; }
+    .yt-car-next { right: 0; border-radius: 6px 0 0 6px; }
+
+    /* Responsive */
+    @media (min-width: 600px) { .yt-thumb-item { flex: 0 0 20%; } }
+    @media (min-width: 900px) { .yt-thumb-item { flex: 0 0 16%; } }
+</style>
+<body>
+<div class="yt-gallery-wrapper" id="yt_gallery_a5n9tuic2">
+    
+    <div class="yt-preview-container" id="yt_preview_container_a5n9tuic2">
+        <a href="https://img.youtube.com/vi/TVbo4FgJ8mM/maxresdefault.jpg" target="_blank" class="yt-preview-link" id="yt_preview_link_a5n9tuic2">
+            <img src="https://img.youtube.com/vi/TVbo4FgJ8mM/maxresdefault.jpg" alt="Preview" class="yt-preview-img" id="yt_preview_img_a5n9tuic2">
+        </a>
+    </div>
+
+    <div class="yt-carousel-wrapper">
+        <button class="yt-car-btn yt-car-prev" aria-label="Scroll Left">
+            <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="yt-track" id="yt_track_a5n9tuic2">
+            
+            <div class="yt-thumb-item active" data-index="0">
+                <img src="https://img.youtube.com/vi/TVbo4FgJ8mM/maxresdefault.jpg" loading="lazy" alt="Gallery Image 1" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="1">
+                <img src="https://img.youtube.com/vi/abDDp9jJheM/oardefault.jpg" loading="lazy" alt="Gallery Image 2" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="2">
+                <img src="https://img.youtube.com/vi/zjfsYfw4Ouw/oardefault.jpg" loading="lazy" alt="Gallery Image 3" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="3">
+                <img src="https://img.youtube.com/vi/7cqhw3cjqzI/maxresdefault.jpg" loading="lazy" alt="Gallery Image 4" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="4">
+                <img src="https://img.youtube.com/vi/QNfEEoA68zk/maxresdefault.jpg" loading="lazy" alt="Gallery Image 5" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="5">
+                <img src="https://img.youtube.com/vi/_cwDtukA2xk/maxresdefault.jpg" loading="lazy" alt="Gallery Image 6" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="6">
+                <img src="https://img.youtube.com/vi/xZSTguJGYyA/maxresdefault.jpg" loading="lazy" alt="Gallery Image 7" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="7">
+                <img src="https://img.youtube.com/vi/lTe0mWqGSMs/maxresdefault.jpg" loading="lazy" alt="Gallery Image 8" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="8">
+                <img src="https://img.youtube.com/vi/krZojvViIEI/maxresdefault.jpg" loading="lazy" alt="Gallery Image 9" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="9">
+                <img src="https://img.youtube.com/vi/oOOMDMPwBes/maxresdefault.jpg" loading="lazy" alt="Gallery Image 10" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="10">
+                <img src="https://img.youtube.com/vi/n013PGsVGBE/maxresdefault.jpg" loading="lazy" alt="Gallery Image 11" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="11">
+                <img src="https://img.youtube.com/vi/4ZhUeiXg49o/oardefault.jpg" loading="lazy" alt="Gallery Image 12" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="12">
+                <img src="https://img.youtube.com/vi/4ZhUeiXg49o/maxresdefault.jpg" loading="lazy" alt="Gallery Image 13" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="13">
+                <img src="https://img.youtube.com/vi/Ghjq6_9xGc8/maxresdefault.jpg" loading="lazy" alt="Gallery Image 14" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="14">
+                <img src="https://img.youtube.com/vi/W3NcWBykHRw/maxresdefault.jpg" loading="lazy" alt="Gallery Image 16" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="15">
+                <img src="https://img.youtube.com/vi/se_wFhUaCmc/maxresdefault.jpg" loading="lazy" alt="Gallery Image 17" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="16">
+                <img src="https://img.youtube.com/vi/zqfCoi0PyIo/maxresdefault.jpg" loading="lazy" alt="Gallery Image 18" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="17">
+                <img src="https://img.youtube.com/vi/Whfg3OISF70/maxresdefault.jpg" loading="lazy" alt="Gallery Image 19" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="18">
+                <img src="https://img.youtube.com/vi/eMv_G8l05SQ/maxresdefault.jpg" loading="lazy" alt="Gallery Image 20" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="19">
+                <img src="https://img.youtube.com/vi/oqisUtO1U4s/maxresdefault.jpg" loading="lazy" alt="Gallery Image 21" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="20">
+                <img src="https://img.youtube.com/vi/Xb8wJFn19o0/maxresdefault.jpg" loading="lazy" alt="Gallery Image 22" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="21">
+                <img src="https://img.youtube.com/vi/qfv219qbb-I/maxresdefault.jpg" loading="lazy" alt="Gallery Image 23" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="22">
+                <img src="https://img.youtube.com/vi/I3uZkc5wZcA/maxresdefault.jpg" loading="lazy" alt="Gallery Image 24" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="23">
+                <img src="https://img.youtube.com/vi/D6Jmifm6d1Y/maxresdefault.jpg" loading="lazy" alt="Gallery Image 25" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="24">
+                <img src="https://img.youtube.com/vi/VYRyXgdZ-Wo/maxresdefault.jpg" loading="lazy" alt="Gallery Image 26" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="25">
+                <img src="https://img.youtube.com/vi/GZy_TiHoTKI/maxresdefault.jpg" loading="lazy" alt="Gallery Image 27" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="26">
+                <img src="https://img.youtube.com/vi/M9uBZWhc8Os/maxresdefault.jpg" loading="lazy" alt="Gallery Image 28" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="27">
+                <img src="https://img.youtube.com/vi/bHvPax17lxk/maxresdefault.jpg" loading="lazy" alt="Gallery Image 29" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="28">
+                <img src="https://img.youtube.com/vi/1zPpziID_mg/maxresdefault.jpg" loading="lazy" alt="Gallery Image 30" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="29">
+                <img src="https://img.youtube.com/vi/1zPpziID_mg/maxresdefault.jpg" loading="lazy" alt="Gallery Image 31" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="30">
+                <img src="https://img.youtube.com/vi/bsoNjzPhXJI/maxresdefault.jpg" loading="lazy" alt="Gallery Image 32" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="31">
+                <img src="https://img.youtube.com/vi/eSw6WiGO3yI/maxresdefault.jpg" loading="lazy" alt="Gallery Image 33" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="32">
+                <img src="https://img.youtube.com/vi/JrG8HZRQBoA/maxresdefault.jpg" loading="lazy" alt="Gallery Image 34" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="33">
+                <img src="https://img.youtube.com/vi/38n61kKxqGE/oardefault.jpg" loading="lazy" alt="Gallery Image 35" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="34">
+                <img src="https://img.youtube.com/vi/E3Bsy4ws8ZE/oardefault.jpg" loading="lazy" alt="Gallery Image 36" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="35">
+                <img src="https://img.youtube.com/vi/B2WptEAUbDs/maxresdefault.jpg" loading="lazy" alt="Gallery Image 37" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="36">
+                <img src="https://img.youtube.com/vi/lrSVMSxABxc/maxresdefault.jpg" loading="lazy" alt="Gallery Image 38" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="37">
+                <img src="https://img.youtube.com/vi/aIW8mck_Dx4/oardefault.jpg" loading="lazy" alt="Gallery Image 39" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="38">
+                <img src="https://img.youtube.com/vi/qzIy6agq-jM/maxresdefault.jpg" loading="lazy" alt="Gallery Image 40" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="39">
+                <img src="https://img.youtube.com/vi/79F4hdHCj0Y/maxresdefault.jpg" loading="lazy" alt="Gallery Image 41" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="40">
+                <img src="https://img.youtube.com/vi/rw3_1-0ItCs/maxresdefault.jpg" loading="lazy" alt="Gallery Image 42" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="41">
+                <img src="https://img.youtube.com/vi/UasK3mp7YDc/maxresdefault.jpg" loading="lazy" alt="Gallery Image 43" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="42">
+                <img src="https://img.youtube.com/vi/-YBZCcJzJvw/maxresdefault.jpg" loading="lazy" alt="Gallery Image 44" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="43">
+                <img src="https://img.youtube.com/vi/fk2qZZHNld0/oardefault.jpg" loading="lazy" alt="Gallery Image 45" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="44">
+                <img src="https://img.youtube.com/vi/H4P6n-USQyw/maxresdefault.jpg" loading="lazy" alt="Gallery Image 46" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="45">
+                <img src="https://img.youtube.com/vi/NARRn9-VBdg/maxresdefault.jpg" loading="lazy" alt="Gallery Image 47" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="46">
+                <img src="https://img.youtube.com/vi/WK7bKCmQYg4/maxresdefault.jpg" loading="lazy" alt="Gallery Image 48" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="47">
+                <img src="https://img.youtube.com/vi/GUXp9FUcGkw/maxresdefault.jpg" loading="lazy" alt="Gallery Image 49" draggable="false">
+            </div>
+            <div class="yt-thumb-item " data-index="48">
+                <img src="https://img.youtube.com/vi/Td4UEhHudD4/maxresdefault.jpg" loading="lazy" alt="Gallery Image 50" draggable="false">
+            </div>
+        </div>
+
+        <button class="yt-car-btn yt-car-next" aria-label="Scroll Right">
+            <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+        </button>
+    </div>
+</div>
+
+<script>
+(function() {
+    const slides = [{"imgSrc":"https://img.youtube.com/vi/TVbo4FgJ8mM/maxresdefault.jpg","alt":"Gallery Image 1"},{"imgSrc":"https://img.youtube.com/vi/abDDp9jJheM/oardefault.jpg","alt":"Gallery Image 2"},{"imgSrc":"https://img.youtube.com/vi/zjfsYfw4Ouw/oardefault.jpg","alt":"Gallery Image 3"},{"imgSrc":"https://img.youtube.com/vi/7cqhw3cjqzI/maxresdefault.jpg","alt":"Gallery Image 4"},{"imgSrc":"https://img.youtube.com/vi/QNfEEoA68zk/maxresdefault.jpg","alt":"Gallery Image 5"},{"imgSrc":"https://img.youtube.com/vi/_cwDtukA2xk/maxresdefault.jpg","alt":"Gallery Image 6"},{"imgSrc":"https://img.youtube.com/vi/xZSTguJGYyA/maxresdefault.jpg","alt":"Gallery Image 7"},{"imgSrc":"https://img.youtube.com/vi/lTe0mWqGSMs/maxresdefault.jpg","alt":"Gallery Image 8"},{"imgSrc":"https://img.youtube.com/vi/krZojvViIEI/maxresdefault.jpg","alt":"Gallery Image 9"},{"imgSrc":"https://img.youtube.com/vi/oOOMDMPwBes/maxresdefault.jpg","alt":"Gallery Image 10"},{"imgSrc":"https://img.youtube.com/vi/n013PGsVGBE/maxresdefault.jpg","alt":"Gallery Image 11"},{"imgSrc":"https://img.youtube.com/vi/4ZhUeiXg49o/oardefault.jpg","alt":"Gallery Image 12"},{"imgSrc":"https://img.youtube.com/vi/4ZhUeiXg49o/maxresdefault.jpg","alt":"Gallery Image 13"},{"imgSrc":"https://img.youtube.com/vi/Ghjq6_9xGc8/maxresdefault.jpg","alt":"Gallery Image 14"},{"imgSrc":"https://img.youtube.com/vi/W3NcWBykHRw/maxresdefault.jpg","alt":"Gallery Image 16"},{"imgSrc":"https://img.youtube.com/vi/se_wFhUaCmc/maxresdefault.jpg","alt":"Gallery Image 17"},{"imgSrc":"https://img.youtube.com/vi/zqfCoi0PyIo/maxresdefault.jpg","alt":"Gallery Image 18"},{"imgSrc":"https://img.youtube.com/vi/Whfg3OISF70/maxresdefault.jpg","alt":"Gallery Image 19"},{"imgSrc":"https://img.youtube.com/vi/eMv_G8l05SQ/maxresdefault.jpg","alt":"Gallery Image 20"},{"imgSrc":"https://img.youtube.com/vi/oqisUtO1U4s/maxresdefault.jpg","alt":"Gallery Image 21"},{"imgSrc":"https://img.youtube.com/vi/Xb8wJFn19o0/maxresdefault.jpg","alt":"Gallery Image 22"},{"imgSrc":"https://img.youtube.com/vi/qfv219qbb-I/maxresdefault.jpg","alt":"Gallery Image 23"},{"imgSrc":"https://img.youtube.com/vi/I3uZkc5wZcA/maxresdefault.jpg","alt":"Gallery Image 24"},{"imgSrc":"https://img.youtube.com/vi/D6Jmifm6d1Y/maxresdefault.jpg","alt":"Gallery Image 25"},{"imgSrc":"https://img.youtube.com/vi/VYRyXgdZ-Wo/maxresdefault.jpg","alt":"Gallery Image 26"},{"imgSrc":"https://img.youtube.com/vi/GZy_TiHoTKI/maxresdefault.jpg","alt":"Gallery Image 27"},{"imgSrc":"https://img.youtube.com/vi/M9uBZWhc8Os/maxresdefault.jpg","alt":"Gallery Image 28"},{"imgSrc":"https://img.youtube.com/vi/bHvPax17lxk/maxresdefault.jpg","alt":"Gallery Image 29"},{"imgSrc":"https://img.youtube.com/vi/1zPpziID_mg/maxresdefault.jpg","alt":"Gallery Image 30"},{"imgSrc":"https://img.youtube.com/vi/1zPpziID_mg/maxresdefault.jpg","alt":"Gallery Image 31"},{"imgSrc":"https://img.youtube.com/vi/bsoNjzPhXJI/maxresdefault.jpg","alt":"Gallery Image 32"},{"imgSrc":"https://img.youtube.com/vi/eSw6WiGO3yI/maxresdefault.jpg","alt":"Gallery Image 33"},{"imgSrc":"https://img.youtube.com/vi/JrG8HZRQBoA/maxresdefault.jpg","alt":"Gallery Image 34"},{"imgSrc":"https://img.youtube.com/vi/38n61kKxqGE/oardefault.jpg","alt":"Gallery Image 35"},{"imgSrc":"https://img.youtube.com/vi/E3Bsy4ws8ZE/oardefault.jpg","alt":"Gallery Image 36"},{"imgSrc":"https://img.youtube.com/vi/B2WptEAUbDs/maxresdefault.jpg","alt":"Gallery Image 37"},{"imgSrc":"https://img.youtube.com/vi/lrSVMSxABxc/maxresdefault.jpg","alt":"Gallery Image 38"},{"imgSrc":"https://img.youtube.com/vi/aIW8mck_Dx4/oardefault.jpg","alt":"Gallery Image 39"},{"imgSrc":"https://img.youtube.com/vi/qzIy6agq-jM/maxresdefault.jpg","alt":"Gallery Image 40"},{"imgSrc":"https://img.youtube.com/vi/79F4hdHCj0Y/maxresdefault.jpg","alt":"Gallery Image 41"},{"imgSrc":"https://img.youtube.com/vi/rw3_1-0ItCs/maxresdefault.jpg","alt":"Gallery Image 42"},{"imgSrc":"https://img.youtube.com/vi/UasK3mp7YDc/maxresdefault.jpg","alt":"Gallery Image 43"},{"imgSrc":"https://img.youtube.com/vi/-YBZCcJzJvw/maxresdefault.jpg","alt":"Gallery Image 44"},{"imgSrc":"https://img.youtube.com/vi/fk2qZZHNld0/oardefault.jpg","alt":"Gallery Image 45"},{"imgSrc":"https://img.youtube.com/vi/H4P6n-USQyw/maxresdefault.jpg","alt":"Gallery Image 46"},{"imgSrc":"https://img.youtube.com/vi/NARRn9-VBdg/maxresdefault.jpg","alt":"Gallery Image 47"},{"imgSrc":"https://img.youtube.com/vi/WK7bKCmQYg4/maxresdefault.jpg","alt":"Gallery Image 48"},{"imgSrc":"https://img.youtube.com/vi/GUXp9FUcGkw/maxresdefault.jpg","alt":"Gallery Image 49"},{"imgSrc":"https://img.youtube.com/vi/Td4UEhHudD4/maxresdefault.jpg","alt":"Gallery Image 50"}];
+    
+    const wrapper = document.getElementById('yt_gallery_a5n9tuic2');
+    const previewContainer = document.getElementById('yt_preview_container_a5n9tuic2');
+    const previewImg = document.getElementById('yt_preview_img_a5n9tuic2');
+    const previewLink = document.getElementById('yt_preview_link_a5n9tuic2');
+    const track = document.getElementById('yt_track_a5n9tuic2');
+    const thumbs = track.querySelectorAll('.yt-thumb-item');
+    
+    const prevBtn = wrapper.querySelector('.yt-car-prev');
+    const nextBtn = wrapper.querySelector('.yt-car-next');
+
+    // --- Function: Select Image ---
+    function selectImage(index) {
+        const data = slides[index];
+        
+        // Update Preview
+        previewImg.style.opacity = '0.5';
+        setTimeout(() => {
+            previewImg.src = data.imgSrc;
+            previewLink.href = data.imgSrc;
+            previewImg.style.opacity = '1';
+        }, 150);
+
+        // Update Active Class
+        thumbs.forEach(t => t.classList.remove('active'));
+        thumbs[index].classList.add('active');
+
+        // Scroll page to Preview (Auto Scroll)
+        previewContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // --- Listeners: Thumbnails ---
+    thumbs.forEach((thumb, idx) => {
+        thumb.addEventListener('click', () => {
+            selectImage(idx);
+        });
+    });
+
+    // --- Listeners: Carousel Navigation Arrows ---
+    prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -200, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: 200, behavior: 'smooth' });
+    });
+
+    // --- Logic: Drag & Scroll Wheel (Original) ---
+    let isDown = false, startX, scrollLeft;
+    track.addEventListener('mousedown', (e) => {
+        isDown = true; track.classList.add('active');
+        startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft;
+    });
+    track.addEventListener('mouseleave', () => { isDown = false; track.classList.remove('active'); });
+    track.addEventListener('mouseup', () => { isDown = false; track.classList.remove('active'); });
+    track.addEventListener('mousemove', (e) => {
+        if(!isDown) return; e.preventDefault();
+        const x = e.pageX - track.offsetLeft; const walk = (x - startX) * 2;
+        track.scrollLeft = scrollLeft - walk;
+    });
+    
+    // Scroll Wheel Support
+    track.addEventListener('wheel', (e) => {
+        if (e.deltaY !== 0) { 
+            e.preventDefault(); 
+            track.scrollLeft += e.deltaY * 1.5; 
+        }
+    }, { passive: false });
+
+})();
+</script>
+
+</body>
+</html>
